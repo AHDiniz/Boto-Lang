@@ -1,0 +1,7 @@
+= equal
+!= not equal
++ add
+- subtract
+* multiply
+/ divide
+

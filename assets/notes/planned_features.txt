@@ -1,0 +1,58 @@
+1. Basic types
+
+Integer types:
+    - Regular endianess: int (word size), int8, int16, int32, int64, int128
+    - Little endian: int8le, int16le, int32le, int64le, int128le
+    - Big endian: int8be, int16be, int32be, int64be, int128be
+Unsigned integers:
+    - Regular endianess: uint (word size), uint8, uint16, uint32, uint64, uint128
+    - Little endian: uint8le, uint16le, uint32le, uint64le, uint128le
+    - Big endian: uint8be, uint16be, uint32be, uint64be, uint128be
+Float types:
+    - Regular endianess: float (word size), float16, float32, float64
+    - Little endian: float16le, float32le, float64le
+    - Big endian: float16be, float32be, float64be
+Character types:
+    - byte
+    - unichar: 32 bit integer for unicode
+    - string: unichar array
+    - cstring: byte array
+Boolean types: bool (word size), bool8, bool16, bool32, bool64
+Pointer types: memaddr (arithmetics allowed), ptr<T> (no arithmetics)
+Types about types: typeid, any (like c++'s auto)
+
+2. Basic Operators:
+
+Arithmetic operators:
+    - add +
+    - subtract -
+    - multiply *
+    - divide /
+    - mod %
+    - power **
+Logic operators:
+    - and &&
+    - or ||
+    - not !
+    - bitwise and &
+    - bitwise or |
+    - bitwise not ~
+    - bit shift left  <<
+    - bit shift right >>
+Collection operators:
+    - len(a)
+    - size(a)
+    - a[i]
+    - a[i,j]
+
+3. Collections:
+
+array<T>: has pointer to where memory starts and length of the array.
+    length(a): returns length of array
+    size(a): returns size allocated to the array
+    a[i]: access array position i in a
+slice<T>: reference to an array or a part of it.
+    length(a): returns length of slice
+    size(a): returns the size allocated to the slice
+list<T>: array with dynamic size
+bitset<T>: implementation of a mathematical set

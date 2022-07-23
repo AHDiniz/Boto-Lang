@@ -1,0 +1,4 @@
+func Main() : void
+{
+    i : int = 1;
+}
